@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    padding-left: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px blue solid;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+
+h1:hover {
+    color: rgb(255, 0, 0);
+    transition: 1s;
+    user-select: none;
+}
+
+.head1 {
+    font-size: 20px;
+}
+
+.head2 {
+    font-size: 40px;
+}
+
+.head3 {
+    font-size: 70px;
+    margin-bottom: -30px;
+}
+
+.fillForm {
+    display: flex;
+    height: 285px;
+    margin: 50px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border: 1px red solid;
+}
+
+.formItem {
+    margin: 20px;
+}
+
+input {
+    margin: 0px 0px 0px 72px;
+    width: 265px;
+    height: 30px;
+}
+
+.Btn {
+    margin: 0px 0px 0px 110px;
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #0004e6, 0 0 60px #3200e6, 0 0 70px #2a00e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #71ff4d, 0 0 40px #62ff4d, 0 0 50px #4dffe1, 0 0 60px #4d50ff, 0 0 70px #f3ff4d, 0 0 80px #35b12a;
+    }
+  }
+
+#url {
+    margin-left: 91px;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #content {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px green solid;
+    margin-top: -27px;
+    max-height: fit-content;
+  }
+
+
+
+#memeContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.meme {
+  cursor: pointer;
+}
+
+img {
+  position: inherit;
+  width: 530px;
+  height: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.meme:hover figcaption {
+  width: 300px;
+}
+
+.topOverlay {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: white 0px 2px 7px;
+  position: relative;
+  top: 20%;
+  z-index: 2;
+}
+
+.botOverlay {
+  color:  black;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: white 0px 2px 7px;
+  position: relative;
+  top: 76%;
+}
+
+#memeContainer {
+  user-select: none;
+}
